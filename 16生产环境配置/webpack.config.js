@@ -9,7 +9,13 @@ process.env.NODE_ENV = "production";
 // 复用loader
 const commonCssLoader = [
   // "style-loader",
-  MiniCssExtractPlugin.loader,
+  {
+    loader: MiniCssExtractPlugin.loader,
+    options: {
+      // 图片路径不正常显示
+      publicPath: "../",
+    },
+  },
   "css-loader",
   {
     // 还需要在package.json中配置browserslist内容
