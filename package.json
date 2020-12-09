@@ -11,6 +11,11 @@
     "webpack": "^5.9.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.8.1",
     "eslint": "^7.15.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-loader": "^4.0.2",
