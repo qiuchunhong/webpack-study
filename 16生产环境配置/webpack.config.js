@@ -115,7 +115,6 @@ module.exports = {
         removeComments: true,
       },
     }),
-
     // css生成单独文件
     new MiniCssExtractPlugin({
       filename: "css/built.css",
