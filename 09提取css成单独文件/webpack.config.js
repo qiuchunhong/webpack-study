@@ -19,7 +19,12 @@ module.exports = {
           // style-loader作用：在js中创建一个style标签，将css内容放时去
           // "style-loader",
           // MiniCssExtractPlugin
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "../",
+            },
+          },
           "css-loader",
         ],
       },
