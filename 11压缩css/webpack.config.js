@@ -30,6 +30,7 @@ module.exports = {
           "css-loader",
           // 修改loader的配置
           {
+            // 还需要在package.json中配置browserslist内容
             loader: "postcss-loader",
             options: {
               postcssOptions: { plugins: [require("postcss-preset-env")()] },

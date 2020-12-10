@@ -22,7 +22,7 @@
     "eslint-plugin-import": "^2.22.1",
     "file-loader": "^6.2.0",
     "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^5.0.0-alpha.15",
     "mini-css-extract-plugin": "^1.3.2",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "postcss-loader": "^4.1.0",
@@ -50,5 +50,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "sideEffects": [
+    "*.css",
+    "*.less"
+  ]
 }

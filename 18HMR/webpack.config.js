@@ -14,7 +14,7 @@ const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/js/index.js",
+  entry: ["./src/js/index.js", "./src/index.html"],
   output: {
     filename: "js/built.js",
     path: resolve(__dirname, "build"),
@@ -66,6 +66,7 @@ module.exports = {
     port: 3000,
     open: true,
     // 开启热更新功能
-    // hot: true,
+    hot: true,
   },
+  target: "web",
 };
